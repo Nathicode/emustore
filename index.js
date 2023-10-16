@@ -195,7 +195,7 @@ document.querySelector('#asp').onclick = () => {
             ite.remove()
          });
          let items = `<div class="items">
-    <img src="/png/${data[i].img}" alt="" class="itempic">
+    <img src="${data[i].img}" alt="" class="itempic">
     <p class="itemname">${data[i].name}</p>
     <p class="price">${data[i].price}</p>
     <a href='tel:${data[i].phonenum}'>ለማዘዝ ያነጋግሩ</a>
@@ -220,7 +220,7 @@ setTimeout(() => {
                ite.remove()
             });
             let items = `<div class="items">
-       <img src="/png/${data[i].img}" alt="" class="itempic">
+       <img src="${data[i].img}" alt="" class="itempic">
        <p class="itemname">${data[i].name}</p>
        <p class="price">${data[i].price}</p>
        <a href='tel:${data[i].phonenum}'>ለማዘዝ ያነጋግሩ</a>
@@ -245,7 +245,7 @@ setTimeout(() => {
                   ite.remove()
                });
                let items = `<div class="items">
-          <img src="/png/${data[i].img}" alt="" class="itempic">
+          <img src="${data[i].img}" alt="" class="itempic">
           <p class="itemname">${data[i].name}</p>
           <p class="price">${data[i].price}</p>
           <a href='tel:${data[i].phonenum}'>ለማዘዝ ያነጋግሩ</a>
@@ -270,7 +270,7 @@ setTimeout(() => {
                      ite.remove()
                   });
                   let items = `<div class="items">
-             <img src="/png/${data[i].img}" alt="" class="itempic">
+             <img src="${data[i].img}" alt="" class="itempic">
              <p class="itemname">${data[i].name}</p>
              <p class="price">${data[i].price}</p>
              <a href='tel:${data[i].phonenum}'>ለማዘዝ ያነጋግሩ</a>
@@ -295,7 +295,7 @@ setTimeout(() => {
                         ite.remove()
                      });
                      let items = `<div class="items">
-                <img src="/png/${data[i].img}" alt="" class="itempic">
+                <img src="${data[i].img}" alt="" class="itempic">
                 <p class="itemname">${data[i].name}</p>
                 <p class="price">${data[i].price}</p>
                 <a href='tel:${data[i].phonenum}'>ለማዘዝ ያነጋግሩ</a>
@@ -317,11 +317,12 @@ document.querySelector('span').onclick = () => {
    
    for(i = 0; i < data.length; i++){
       let items = `<div class="items">
-   <img src="/png/${data[i].img}" alt="" class="itempic">
+   <img src="${data[i].img}" alt="" class="itempic">
    <p class="itemname">${data[i].name}</p>
    <p class="price">${data[i].price}</p>
    <a href='tel:${data[i].phonenum}'>ለማዘዝ ያነጋግሩ</a>
    </div>`;
+   data;
       if (data[i].res.includes(input)) {
          console.log(data[i]);
          div.innerHTML += items;
