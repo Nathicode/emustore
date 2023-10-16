@@ -157,7 +157,7 @@ let data = [
 function useful() {
    for(i = 0; i < data.length; i++){
       let items = `<div class="items">
-      <img src="/png/${data[i].img}" alt="" class="itempic">
+      <img src="${data[i].img}" alt="" class="itempic">
       <p class="itemname">${data[i].name}</p>
       <p class="price">${data[i].price}</p>
       <a href='tel:${data[i].phonenum}'>ለማዘዝ ያነጋግሩ</a>
